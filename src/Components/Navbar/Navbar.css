@@ -1,0 +1,165 @@
+
+.navbar{
+    position: relative;
+}
+
+.n-wrapper{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.n-left{
+    flex: 1;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+}
+
+.n-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.n-name>span>img{
+    width: 2rem;
+}
+
+.n-name>:nth-child(2){
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-left: 0.5rem;
+    color: #EC9F05;
+}
+.n-name>:nth-child(3){
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-left: 0.5rem;
+    color: #0099ff;
+}
+.n-name>:nth-child(4){
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-left: 0.5rem;
+    color: #EC9F05;
+}
+
+/* nav right */
+.n-right{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+
+.n-list{
+    flex: 10;
+}
+
+.n-list>ul{
+    display: flex;
+    gap: 2rem;
+    margin-right: 4rem;
+    list-style: none;
+}
+
+.n-list>ul>li>a{
+    text-decoration: none;
+}
+
+.n-list>ul>li>a:hover{
+    cursor: pointer;
+    color: #0099ff;
+}
+
+.n-button{
+    flex: 2;
+    text-decoration: none;
+}
+
+/* bootem navbar */
+
+.bootem-nav{
+    text-align: center;
+    background: #ffffff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: none;
+    border: 0.5px solid #0099ff;
+}
+
+.bootem-nav>a{
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: #0099ff;
+    text-decoration: none;
+    border: none;
+    border-radius: 50%;
+}
+
+.bootem-nav>a:hover{
+    height: 1.3rem;
+    width: 1.3rem;
+    border-radius: 50%;
+    color: whitesmoke;
+    background: #0099ff;
+    transition: ease-in-out all 0.6s;
+    transform: rotate(360deg);
+}
+
+
+/* media quary */
+
+@media screen  and (max-width : 480px){
+
+    html{
+        scroll-padding-top: 0;
+    }
+
+    body{
+        padding-bottom: 6rem;
+    }
+
+    .bootem-nav{
+        display: block;
+    }
+
+    .n-right{
+        display: none;
+    }
+
+    .n-left{
+        padding-top: 1.7rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .n-name>span>img{
+        width: 1.8rem;
+    }
+
+    .n-name>:nth-child(2){
+        font-size: 1.3rem;
+        font-weight: bold;
+        padding-left: 0.5rem;
+        color: #EC9F05;
+    }
+    .n-name>:nth-child(3){
+        font-size: 1.3rem;
+        font-weight: bold;
+        padding-left: 0.5rem;
+        color: #0099ff;
+    }
+    .n-name>:nth-child(4){
+        font-size: 1.3rem;
+        font-weight: bold;
+        padding-left: 0.5rem;
+        color: #EC9F05;
+    }
+}

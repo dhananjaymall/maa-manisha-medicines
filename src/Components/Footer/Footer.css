@@ -1,0 +1,29 @@
+
+.footer{
+    display: flex;
+    align-items: center;
+    /* margin: -3.5rem; */
+    position: relative;
+    transform: scale(1.13);
+}
+
+.footer-content{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.footer-content>a>i{
+    display: flex;
+    padding-bottom: 2rem;
+}
+
+
+@media screen  and (max-width : 480px){
+    .footer{
+        transform: scale(1);
+    }
+}
